@@ -305,7 +305,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 |  |
+| 프로젝트명 | Agent AI 추론을 위한 메모리 효율 최적화 |
 | 트랙 | 연구 |
 | 팀명 | def |
 | 팀구성 | 서혜원, 신은서, 이재린 |
@@ -317,7 +317,7 @@
 | 기대 효과 | - 효율성 극대화:동일 하드웨어 대비 AI 추론 성능(Throughput) 및 응답 속도(Latency)의 유의미한 향상.<br>- 시스템 안정성:메모리 이슈로 인한 시스템 다운 방지 및 멀티태스킹 환경에서의 부드러운 사용자 경험 유지.<br>- 에너지 효율: 불필요한 연산 낭비를 줄여 전력 소모 최적화 및 발열 제어 |
 | GitHub Repo | [https://github.com/capstone-2026-ewha/def](https://github.com/capstone-2026-ewha/def) |
 | Team Ground Rule | [https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md](https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-3-11 |
+| 최종수정일 | 2026-3-12 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
