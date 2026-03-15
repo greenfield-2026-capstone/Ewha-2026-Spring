@@ -269,8 +269,8 @@
 | 사용 기술 | [AI] OpenAI API <br> [Frontend] React, Google Maps Platform, HTML / CSS / JavaScript <br> [Backend] Node.js, Express.js<br> [Database] MySQL |
 | 기대 효과 | 여성 1인 여행자가 안전하고 효율적으로 여행을 계획할 수 있고, 여성의 이동권과 안전권을 기술적으로 보장한다. |
 | GitHub Repo | [https://github.com/capstone-team404](https://github.com/capstone-team404) |
-| Team Ground Rule | (https://github.com/iinge/Ewha-2026-Spring/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 26.03.14 |
+| Team Ground Rule | [(https://github.com/iinge/Ewha-2026-Spring/blob/main/Team_Ground_Rule.md)](https://github.com/capstone-team404/Spring404/blob/main/Team_Ground_Rule.md) |
+| 최종수정일 | 26.03.15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
