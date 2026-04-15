@@ -2,7 +2,7 @@
 
 | 팀번호 | 팀명 | 트랙 | 프로젝트명 |
 |:------:|------|:----:|------------|
-| [1](#team-1) | 이사장님 | 연구 | Test-Time Prompt Tuning 기반 Cross-Sensor 도메인 적응을 통한 Vision-Language Model의 열대 저기압 분류 연구 |
+| [1](#team-1) | 이사장님 | 연구 | 테스트 이미지의 도메인을 자동으로 파악해 텍스트와 이미지 임베딩을 동적으로 재조합함으로써 도메인 변화에도 정확한 CLIP 기반 Zero-Shot 이미지 분류 연구 |
 | [2](#team-2) | Sudo | 산학 | HealthMate AI: 만성질환 위험군 대상 식단 인식·코칭 통합 헬스케어 플랫폼 |
 | [3](#team-3) | Alltology | 연구 | 일반 벤치마크를 활용한 LLM 내부 파라미터 확장과 온톨로지 기반 지식 증강 기법의 실증적 성능 비교 및 융합 방법론 연구 |
 | [5](#team-5) | 규교굥 | 산학 | 생성형 AI NPC와 흥정하는 골동품 가게 운영 시뮬레이션 게임 |
@@ -14,11 +14,11 @@
 | [11](#team-11) | 알고리듬 | 산학 |  SpeedSchedule: 인력 운영 최적화를 위한 AI 스케줄링 및 시간표 관리 웹 플랫폼 |
 | [12](#team-12) | 404 | 산학 | 여성 1인 여행자를 위한 DB 기반 가이드맵 및 안전 동행 매칭 서비스 |
 | [13](#team-13) | Semicolone; | 산학 | AI 질문을 ‘기억되는 인사이트’로 바꿔주는 개인 지식 관리 플랫폼 |
-| [14](#team-14) | def | 연구 | 로컬 환경에서의 Agentic AI 병목 분석 및 성능 최적화: Apple silicon 온디바이스를 중심으로 |
-| [15](#team-15) | 햄부기 | 연구 | 엣지 환경 배포를 위한 Vision Transformer 구조적 가지치기 및 경량화 파이프라인 구축과 성능 분석 |
+| [14](#team-14) | def | 연구 | 로컬 LLM 기반 Coding Agent에서 Frequently Accessed Code 블록의 KV Cache 재사용을 통한 Token 소비 최적화 |
+| [15](#team-15) | 햄부기 | 연구 | 엣지 디바이스 배포를 위한 Vision Foundation Model의 2:4 구조적 희소성 성능 분석 및 추론 파이프라인 구축 |
 | [16](#team-16) | 퓨터 | 산학| 성향 변화형 AI 캐릭터 기반 영어 회화 학습 서비스 |
 | [17](#team-17) | SPY | 산학 | Moni: AI 기반 소비 예측과 맞춤형 챌린지를 결합한 개인화 소비 코칭 서비스 |
-| [18](#team-18) | 디바트(deep-art) | 연구 | 멀티모달 AI 기반 배리어프리 오디오 도슨트 자동 생성 서비스 |
+| [18](#team-18) | 디바트(deep-art) | 연구 | 철새 이동 데이터 기반 XAI 인터랙티브 미디어아트 설치 작품: AI 의사결정 과정의 대중적 이해 증진 |
 | [19](#team-19) | Logue | 산학 | 자연어 기반 데이터 분석 질의를 통해 조직의 데이터 접근성과 의사결정 속도를 향상시키는 AI 기반 데이터 분석 웹 인터페이스, Logue |
 
 ---
@@ -28,22 +28,22 @@
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 | Test-Time Prompt Tuning 기반 Cross-Sensor 도메인 적응을 통한 Vision-Language Model의 열대 저기압 분류 연구 |
-| 서비스명(브랜드) | CyCLIP |
+| 프로젝트명 | 테스트 이미지의 도메인을 자동으로 파악해 텍스트와 이미지 임베딩을 동적으로 재조합함으로써 도메인 변화에도 정확한 CLIP 기반 Zero-Shot 이미지 분류 연구 |
+| 서비스명(브랜드) | DoFit |
 | 트랙 | 연구 |
 | 팀명 | 이사장님 |
 | 팀구성 | 설영은, 신지민, 윤희서 |
 | 팀지도교수 | 황의원 교수님 |
-| 무엇을 만들고자 하는가 | Test-Time Prompt Tuning(TPT)을 활용한 Cross-Sensor 도메인 적응 기반 Vision-Language Model(VLM) 열대 저기압 분류 모델을 개발한다. 위성 영상과 텍스트 정보를 함께 활용하는 멀티모달 모델을 기반으로 서로 다른 위성 센서(Himawari, GOES 등)에서 수집된 열대 저기압 데이터를 학습하고, 센서 환경이 달라져도 안정적인 분류 성능을 유지할 수 있는 기상 분석 AI 모델을 구축하는 것을 목표로 한다. 이를 통해 실제 다양한 위성 환경에서도 적용 가능한 일반화된 기상 영상 분석 모델을 개발한다. |
-| 고객 (누구를 위해) | 본 연구는 기상 데이터 기반 AI 모델을 연구하는 연구자와 기상 서비스 및 기상 분석 시스템 개발자를 주요 대상으로 한다. 궁극적으로는 정확한 열대 저기압 정보를 필요로 하는 기상 기관, 재난 대응 시스템, 기상 데이터 분석 산업 등에서 활용될 수 있는 기술 기반을 제공하는 것을 목표로 한다. |
-| Pain Point (해결할 문제) | 기상 및 기후 데이터는 위성 센서 종류, 해상도, 관측 방식 등의 차이로 인해 데이터 분포가 달라지는 domain gap 문제가 발생한다. 이로 인해 특정 센서 데이터로 학습된 모델은 새로운 센서 환경에서 domain shift가 발생하여 열대 저기압 분류와 같은 실제 응용 환경에서 성능 저하 문제가 발생한다. 특히 위성 영상과 텍스트 정보를 활용하는 멀티모달 모델의 경우 센서 차이, 데이터 수집 환경 차이, 지역별 관측 조건 차이 등으로 인해 모델의 일반화 성능이 제한되는 문제가 존재한다. 따라서 본 연구에서는 이러한 Cross-Sensor 환경에서 발생하는 문제를 해결하는 것을 핵심 목표로 한다. |
-| 사용 기술 | 본 연구에서는 다음과 같은 기술을 활용한다. <br><br>- Vision-Language Model (CLIP 기반): 위성 이미지와 텍스트 정보를 함께 학습하는 멀티모달 모델<br>- Test-Time Prompt Tuning (TPT): 테스트 단계에서 프롬프트를 조정하여 새로운 도메인 환경에서도 성능을 향상시키는 기법<br>- Domain Adaptation / Cross-Sensor Learning: 서로 다른 위성 센서 데이터 간의 domain gap을 줄이는 기술<br>- Deep Learning Framework (PyTorch): 모델 학습 및 실험 환경 구축<br>- 기상 위성 데이터셋 활용: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS 등<br><br>또한 CLIP zero-shot 모델을 베이스라인으로 설정하고, TPT 적용 모델과의 성능을 비교하여 Cross-Sensor 환경에서의 성능 개선 여부를 분석한다. |
-| 개발환경 | 1. Client 디바이스를: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경<br>2. 딥러닝 프레임워크: Python/PyTorch/CUDA/CuDNN 기반 GPU 환경<br>3. 데이터셋: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS, ERA5 등<br>4. 활용 모델: CLIP 기반 Vision-Language Model<br>5. 사전학습 모델: CLIP pretrained model<br>6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard, NetCDF 등<br>7. 데이터 시각화 뷰어: Panoply
-| 사용하는 소프트웨어 URL | 1. Client 디바이스를: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경<br>2. 딥러닝 프레임워크: Python/PyTorch/CUDA/CuDNN 기반 GPU 환경<br>3. 데이터셋: Himawari-8/9 TC Archive, TC PRIMED, IBTrACS, ERA5 등<br>4. 활용 모델: CLIP 기반 Vision-Language Model<br>5. 사전학습 모델: CLIP pretrained model<br>6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard, NetCDF 등<br>7. 데이터 시각화 뷰어: Panoply
-| 기대 효과 | 본 연구를 통해 센서 환경 변화에도 강건한 기상 영상 분석 모델 개발, 열대 저기압 탐지 및 분류 정확도 향상, 새로운 위성 센서 환경에서도 추가 재학습 없이 활용 가능한 모델 제안과 같은 효과를 기대할 수 있다. 또한 본 연구에서 제안하는 멀티모달 도메인 적응 방법은 구름 분류, 강수 패턴 분석, 기상 현상 탐지 등 다양한 기상 및 기후 데이터 분석 문제로 확장될 수 있으며, 환경 데이터 분석 분야에서 멀티모달 AI 연구의 활용 가능성을 확대할 것으로 기대된다. |
+| 무엇을 만들고자 하는가 | CLIP(Contrastive Language–Image Pre-training)은 이미지와 텍스트를 함께 이해하는 멀티모달 AI 모델인데, 기존 방식은 스케치든 실사(이를 domain shift라고 봄) 사진이든 똑같은 클래스 대표 벡터로 판단해서 domain shift 상황에서 성능이 떨어지는 경우가 많다. 따라서 테스트 이미지가 들어오는 순간 "아 이건 ~~한 도메인이네"를 자동으로 파악하고, 그 도메인에 맞게 텍스트·이미지 임베딩을 동적으로 재조합하는 test-time domain adaptation 시스템을 만들고자 한다. |
+| 고객 (누구를 위해) | 스케치, 회화, 위성사진, 의료 이미지처럼 학습 데이터와 도메인이 다른(domain shift가 발생하는) 이미지를 분류해야 하는데, 매번 새로 fine-tuning하기엔 데이터도 없고 비용도 부담스러운 연구자 및 ML 엔지니어 |
+| Pain Point (해결할 문제) | 멀티모달 데이터는 도메인 차이(domain shift)가 발생하면 테스트 성능이 크게 저하된다. 특히 CLIP과 같은 Vision-Language Model(VLM)은 Zero-Shot downstream task 환경에서 학습 도메인과 테스트 도메인이 달라지는 순간 이미지-텍스트 간 정렬이 어긋나 분류 성능이 떨어진다. 기존의 멀티모달 도메인 적응(domain adaptation) 방식은 추가 학습 데이터나 fine-tuning이 필요해 비효율적이고 성능 향상도 제한적이다. 이를 해결하기 위해 별도의 재학습 없이 테스트 시점에서만 도메인을 자동으로 감지하고 적응하는 Test-Time Domain Adaptation 방식이 필요하다. |
+| 사용 기술 | 본 연구에서는 다음과 같은 기술을 활용한다. <br><br>- Vision-Language Model (CLIP 기반): 이미지와 텍스트 정보를 함께 이해하는 멀티모달 모델<br>- MeanShift 기반 MTA (MeanShift for Test-Time Augmentation): 테스트 단계에서 augmented view들의 outlier를 자동 제거하고 robust한 이미지 임베딩을 획득하는 기법<br>- Test-Time Domain Adaptation: 테스트 단계에서 이미지의 도메인을 자동 추정하여 텍스트·이미지 임베딩을 동적으로 재조합하는 기법<br>- Stable Diffusion V2: 테스트 이미지로부터 다양한 augmented view를 생성하는 이미지 증강 모델<br>- Deep Learning Framework (PyTorch): 모델 학습 및 실험 환경 구축<br><br>또한 기존 CLIP의 고정 평균 프롬프트 앙상블을 베이스라인으로 설정하고, 도메인 가중 동적 임베딩 재조합 방식과의 성능을 비교하여 domain shift 환경에서의 성능 개선 여부를 분석한다. |
+| 개발환경 | 1. Client 디바이스: PC(Windows, Mac) 및 GPU 서버 기반 연구 환경<br>2. 딥러닝 프레임워크: Python/PyTorch/CUDA 기반 GPU 환경<br>3. 데이터셋: ImageNet 계열 5종(ImageNet, ImageNet-A, ImageNet-V2, ImageNet-R, ImageNet-Sketch) + 특정 도메인 10종(SUN397, Aircraft, EuroSAT, StanfordCars, Food101, OxfordPets, Flower102, Caltech101, DTD, UCF101)<br>4. 활용 모델: CLIP 기반 Vision-Language Model<br>5. 사전학습 모델: CLIP pretrained model (ViT 기반)<br>6. 라이브러리: NumPy, Pandas, Matplotlib, TensorBoard 등<br>7. 이미지 증강: Stable Diffusion V2, RandomCrop |
+| 사용하는 소프트웨어 URL | 1. CLIP 공식 코드베이스: https://github.com/openai/CLIP<br>2. DiffTPT 코드베이스: https://github.com/chunmeifeng/DiffTPT<br>3. MTA 코드베이스: https://github.com/MaxZanella/MTA<br>4. ImageNet 데이터셋: [https://www.image-net.org](https://www.image-net.org/)<br>5. HuggingFace (사전학습 모델 허브): [https://huggingface.co](https://huggingface.co/) |
+| 기대 효과 | 본 연구를 통해 domain shift 환경에서도 강건한 이미지 분류 모델 개발, Zero-Shot 분류 정확도 향상, 새로운 도메인 환경에서도 추가 fine-tuning 없이 활용 가능한 모델 제안과 같은 효과를 기대할 수 있다. 또한 본 연구에서 제안하는 test-time domain adaptation 방법론은 멀티모달 모델의 domain shift 문제를 다루는 다양한 downstream task로 확장될 수 있으며, 데이터 확보가 어려운 특수 도메인 분야에서 멀티모달 AI 연구의 활용 가능성을 확대할 것으로 기대된다. |
 | GitHub Repo | [https://github.com/chairwomans/chairwomans-capstone](https://github.com/chairwomans/chairwomans-capstone) |
 | Team Ground Rule | [Team Ground Rule](https://github.com/chairwomans/chairwomans-capstone/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-03-13 |
+| 최종수정일 | 2026-04-14 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -60,16 +60,16 @@
 | 팀명 | Sudo |
 | 팀구성 | 최지수, 박서연, 신수빈 |
 | 팀지도교수 | 황의원 교수님 |
-| 무엇을 만들고자 하는가 | - **Vision AI 기반 식단 자동 기록**: 음식 사진 촬영 한 번으로 YOLO 계열 이미지 인식 모델이 음식 종류·양·영양소를 자동 분석하여 식단을 등록. 사용자 선호도 피드백을 누적해 추천 정확도를 지속 향상.</br> - **초개인화 건강 프로필 엔진**: 키·몸무게·나이·성별·질환 정보(고혈압·당뇨·이상지질혈증 등)를 기반으로 사용자 고유 건강 프로필을 생성하고, LLM + 규칙 기반 필터링 하이브리드 AI로 식단·운동 계획을 지속 정밀 조정.</br> - **동적 맞춤 운동 코칭**: 운동 수행 후 사용자가 입력하는 피드백(강도·피로도·통증 부위)을 반영해 다음 운동 계획을 실시간 재조정하는 AI 개인 트레이너 기능.</br> - **통합 건강 일정 관리**: 식단·운동·병원 예약·건강검진 일정을 하나의 캘린더에서 관리하고, FCM 기반 푸시 알림으로 실천을 유도.</br> - **LLM 기반 AI 챗봇 상담**: 축적된 사용자 건강 데이터(식단·운동·질환 정보)를 맥락으로 이해하여 개인 상황에 최적화된 실시간 건강 조언 및 Q&A 제공.</br> - **포인트 시스템**: 식단 기록·운동 목표 달성·일정 이행 시 포인트 지급, 연속(streak) 달성 보상으로 자발적 참여를 유도하고 프리미엄 AI 분석 기능 이용권과 교환 가능. |
-| 고객 (누구를 위해) | - **2030세대 만성질환 보유자 및 위험군**: 고혈압·당뇨·이상지질혈증 등 특정 질환에 맞는 식단·운동을 전문 지식 없이도 안전하게 안내받고 싶은 사용자. (국민건강보험공단 기준 2030세대 만성질환 유병률 급증)</br> - **바쁜 현대인 및 1인 가구**: 식단·운동·병원 일정을 여러 앱에 분산 관리하는 불편함을 느끼며, 하나의 통합 플랫폼을 필요로 하는 사용자.</br> - **건강 관리 지속에 어려움을 겪는 사람**: 동기 부족으로 루틴 유지에 실패하는 사용자로, 게임 형태의 보상 구조를 통해 장기적 습관 형성이 필요한 사람. |
-| Pain Point (해결할 문제) | - **건강 관리 도구의 파편화**: 식단·운동·병원 예약 앱이 분리되어 데이터가 통합 활용되지 못하고 관리 피로도가 높은 문제를 하나의 플랫폼으로 해결.</br> - **개인화 부재**: 기존 앱들이 질환·체력·선호도를 반영하지 못한 획일적 정보만 제공하는 한계를, LLM + 규칙 기반 하이브리드 AI 프로필 학습으로 해결.</br> - **식단 기록의 높은 진입장벽**: 직접 음식명·양을 입력해야 하는 번거로움을 Vision AI 이미지 인식으로 간소화하여 기록 지속성을 확보.</br> - **지속 참여 동기 부족**: 건강 관리가 의무처럼 느껴져 이탈하는 문제를, 포인트 적립·streak 보상·목표 달성 피드백 등으로 해결. |
-| 사용 기술 | - **AI 추천 엔진 (LLM + 규칙 기반 필터링)**: 건강 프로필·질환 정보·누적 피드백 데이터를 결합한 하이브리드 모델로 식단·운동 개인화 추천 정밀도 향상.</br> - **이미지 인식 (Vision AI / YOLO 계열)**: 음식 사진에서 식품 종류·양을 자동 감지, 공공데이터포털 식품영양성분 DB와 연계하여 칼로리·영양소 정보 자동 산출.</br> - **백엔드 / 앱 프레임워크**: FastAPI 또는 Spring Boot 기반 고성능 RESTful 서버 + Flutter 기반 iOS·Android 크로스 플랫폼 앱.</br> - **공공 데이터 연동**: 공공데이터포털 식품영양성분 DB 및 의료기관 정보 API 실시간 연동으로 정확한 영양·의료 정보 반영.</br> - **알림 시스템**: FCM(Firebase Cloud Messaging)을 활용한 식단·운동·병원 일정 푸시 알림.</br> - **클라우드 인프라**: 사용자 증가에 대응하는 확장 가능한 클라우드 서버 기반 데이터 통합 관리 및 AI 추천 시스템 실시간 연동. |
-| 개발환경 | 1. Client 디바이스는 Mobile (iOS/Android 통합 앱)<br>2. FE는 Flutter (Dart)<br>3. BE는 FastAPI (Python)<br>4. DB는 MySQL (사용자 정보 및 식단/운동 로그 저장)<br>5. FE 또는 BE에 사용하는 특별한 라이브러리<br>      - AI/DL: PyTorch(딥러닝 엔진), Ultralytics (YOLOv8/v10 모델 라이브러리)<br>      - BE: SQLAlchemy (ORM), Pydantic (데이터 검증), Uvicorn (ASGI 서버)<br>      - DATA: Pandas/NumPy (식단 영양소 데이터 처리)<br>6. API Call로 사용할 서비스는 OpenAI API (GPT-4 기반 건강 상담 챗봇), 공공데이터포털 API (식품 영양 성분 데이터베이스)
-| 사용하는 소프트웨어 URL | 1. Client 디바이스는 Mobile (iOS/Android 통합 앱)<br>2. FE는 Flutter (Dart)<br>3. BE는 FastAPI (Python)<br>4. DB는 MySQL (사용자 정보 및 식단/운동 로그 저장)<br>5. FE 또는 BE에 사용하는 특별한 라이브러리<br>      - AI/DL: PyTorch(딥러닝 엔진), Ultralytics (YOLOv8/v10 모델 라이브러리)<br>      - BE: SQLAlchemy (ORM), Pydantic (데이터 검증), Uvicorn (ASGI 서버)<br>      - DATA: Pandas/NumPy (식단 영양소 데이터 처리)<br>6. API Call로 사용할 서비스는 OpenAI API (GPT-4 기반 건강 상담 챗봇), 공공데이터포털 API (식품 영양 성분 데이터베이스)
-| 기대 효과 | - **만성질환 예방 및 관리 실효성 향상**: 질환별 맞춤 식단·운동 추천으로 고혈압·당뇨·이상지질혈증 등 생활습관 질환의 조기 예방과 관리 지원.</br> - **건강 관리 습관의 장기적 내재화**: 포인트 보상·streak 달성·AI 피드백의 선순환 구조로 단기 다짐이 아닌 지속 가능한 건강 루틴 형성.</br> - **데이터 기반 개인화 서비스 고도화**: 사용자 피드백 누적 → 추천 알고리즘 정밀도 향상 → 향후 스마트워치 연동·AI 건강 리포트 등 프리미엄 기능 확장 기반 마련.</br> - **의료비 절감 및 사회적 기여**: 예방 중심 건강 관리 습관 형성으로 불필요한 병원 방문과 만성질환 악화를 줄여 개인·사회적 의료 비용 절감에 기여. |
+| 무엇을 만들고자 하는가 | 만성질환(고혈압·당뇨·이상지질혈증) 위험군을 대상으로, 식단 사진 한 장으로 영양소를 자동 분석하고 개인 건강 이력 기반의 AI 코칭을 제공하는 통합 헬스케어 모바일 플랫폼 On-Care. 식단 인식, 운동 코칭, AI 챗봇 상담, 헬스장 검색·예약, 건강 일정 관리, 포인트 보상을 하나의 앱에서 제공한다. |
+| 고객 (누구를 위해) | -**1차 타겟**: 고혈압·당뇨·이상지질혈증 등 만성질환 위험군에 해당하는 2030세대. 건강 관리의 필요성은 인식하지만 복잡한 기록·관리 방식에 진입 장벽을 느끼는 사용자.<br> -**2차 타겟**: 담당 트레이너와 연동해 고객 데이터를 효율적으로 파악하고자 하는 헬스 트레이너 및 헬스장 운영자. |
+| Pain Point (해결할 문제) | **① 파편화된 건강 관리**: 식단·운동·병원 일정을 별도 앱에서 관리해야 해 데이터 연속성이 낮고 지속 사용률이 떨어짐. 앱 전환 비용이 기록 이탈을 가속.<br> **② 식단 기록의 높은 진입 장벽**: 기존 앱은 텍스트 수동 입력·바코드 스캔에 의존해 기록 이탈률이 높음. 사진 1장으로 즉시 분석되는 UX가 없어 초기 습관 형성에 실패.<br> **③ 획일적 AI 조언**: 개인 건강 이력·식단 로그·질환 정보를 반영하지 못하는 일반적 정보만 제공. '나를 아는 AI'가 아니라 '검색 결과 요약' 수준에 그침.<br> **④ 트레이너 연동 부재**: 이용자의 건강 데이터가 트레이너에게 전달되는 인앱 채널이 없어 대면 상담 시 수기 보고에 의존. 맞춤 지도의 질이 낮아지고 신뢰도가 하락.<br> **⑤ 동기부여 지속성 부족**: 단기 목표 달성 후 앱 이탈이 빈번. 장기 습관 형성을 유도하는 보상 메커니즘(포인트·Streak)이 없어 DAU 유지에 실패. |
+| 사용 기술 | **AI/ML**: YOLOv8 (음식 이미지 1차 필터링으로 불필요한 API 호출 차단), Gemini Vision API (음식 종류·섭취량·영양소 세부 분석), GPT-4o (RAG 파이프라인 최종 답변 생성), LangChain (RAG 오케스트레이션), Pinecone (사용자 건강 이력 Vector DB), text-embedding-3-small (질문 임베딩)<br> **모바일**: Flutter 3.x (iOS/Android 크로스플랫폼), Riverpod (상태 관리), Dart<br> **백엔드**: FastAPI (REST API 서버), MySQL on AWS RDS (사용자·식단·운동·포인트 데이터), JWT 인증<br> **인프라**: Docker (컨테이너화), AWS EC2 (서버 배포), GitHub Actions (CI/CD 자동화), FCM (실시간 푸시 알림)<br> **외부 API**: 카카오맵 API (위치 기반 헬스장 검색), 공공데이터포털 식품영양성분 DB (칼로리·탄수화물·단백질·지방·나트륨 매핑) |
+| 개발환경 | **OS**: macOS / Linux (Docker 기반 통일 환경)<br> **모바일 개발**: Flutter 3.x, Dart SDK, Android Studio / VS Code<br> **백엔드 개발**: Python 3.11+, FastAPI, SQLAlchemy, Uvicorn<br> **AI 모델 서빙**: PyTorch (YOLOv8 inference), Ultralytics 라이브러리<br> **클라우드**: AWS EC2 (백엔드 서버), AWS RDS MySQL (데이터베이스)<br> **컨테이너**: Docker, Docker Compose<br> **버전 관리 및 협업**: Git / GitHub, GitHub Actions (CI/CD), GitHub Projects (태스크 관리) |
+| 사용하는 소프트웨어 URL | -Flutter: https://flutter.dev<br> -FastAPI: https://fastapi.tiangolo.com<br> -YOLOv8 (Ultralytics): https://github.com/ultralytics/ultralytics<br> -Google Gemini API: https://ai.google.dev<br> -OpenAI GPT-4o: https://openai.com<br> -LangChain: https://www.langchain.com<br> -Pinecone: https://www.pinecone.io<br> -Firebase FCM: https://firebase.google.com<br> -카카오맵 API: https://apis.map.kakao.com<br> -공공데이터포털 식품영양성분 DB: https://www.data.go.kr<br> -AWS (EC2 · RDS): https://aws.amazon.com<br> -Docker: https://www.docker.com |
+| 기대 효과 | **① 식단 기록 자동화**: 사진 1장으로 칼로리·영양소 즉시 분석. 기록 부담을 최소화해 일일 식단 기록 유지율을 높임.<br> **② 개인 맞춤 AI 코칭**: RAG 파이프라인으로 인바디·식단 로그·운동 이력·질환 정보를 LLM에 주입. 일반 앱 대비 구체적이고 실질적인 조언 제공.<br> **③ 건강 관리 통합화**: 식단·운동·헬스장·병원 일정을 단일 플랫폼에서 관리. 앱 전환 비용 제거 및 데이터 연속성 확보.<br> **④ 트레이너-이용자 연결**: AI가 이용자 데이터를 자동 요약해 트레이너에게 전달. 전문 지도의 질·효율 향상 및 상담 준비 시간 단축.<br> **⑤ 만성질환 예방 기여**: 2030세대의 조기 식습관·운동 습관 개선을 통해 고혈압·당뇨·이상지질혈증 발병 위험 감소에 기여.<br> **⑥ 장기 지속성 확보**: 포인트·Streak 보상 시스템으로 내재적 동기를 강화하고 단기 이탈을 방지. 장기적 건강 습관 형성 유도. |
 | GitHub Repo | [https://github.com/CSE-Sudo-26/sudo-capstone-project](https://github.com/CSE-Sudo-26/sudo-capstone-project) |
 | Team Ground Rule | [Team Ground Rule](https://github.com/CSE-Sudo-26/sudo-capstone-project/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-03-26 |
+| 최종수정일 | 2026-04-15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -293,17 +293,17 @@
 | 트랙 | 산학 |
 | 팀명 | 404 |
 | 팀구성 | 이아림, 노유나, 이채원  |
-| 팀지도교수 |  |
-| 무엇을 만들고자 하는가 | 여성 혼자 여행하는 사람들을 위한 안전 중심 여행 플랫폼을 개발하고자 한다. 여성 사용자들이 직접 작성한 안전 리뷰 데이터를 기반으로 여행지의 안전도를 지도에 표시하고, 이를 활용해 안전한 여행 경로와 맛집 및 관광 코스를 추천한다. 또한 같은 지역을 여행하는 여성들 간 동행 매칭 기능을 제공하여 안전하고 편안한 여행 환경을 만드는 것을 목표로 한다. |
+| 팀지도교수 | 오유란 |
+| 무엇을 만들고자 하는가 | 여성 혼자 여행하는 사람들을 위한 안전 중심 여행 플랫폼을 개발하고자 한다. 여성 사용자들이 직접 작성한 안전 리뷰 데이터를 기반으로 여행지의 안전도를 지도에 표시하고, 이를 활용해 안전한 여행 경로를 추천한다. 또한 같은 지역을 여행하는 여성들 간 동행 매칭 기능을 제공하여 안전하고 편안한 여행 환경을 만드는 것을 목표로 한다. |
 | 고객 (누구를 위해) | 20대 초반 여성교환 학생, 사회초년생 여성 직장인(20대 중후반) |
 | Pain Point (해결할 문제) | 여성의 안전 정보 부족과 혼자 여행할 때의 불안감 |
-| 사용 기술 | [AI] OpenAI API <br> [Frontend] React, Google Maps Platform, HTML / CSS / JavaScript <br> [Backend] Node.js, Express.js<br> [Database] MySQL |
+| 사용 기술 | [AI] OpenAI API <br> [Frontend] React, Google Cloud Console, HTML / CSS / JavaScript <br> [Backend] FastAPI<br> [Database] MySQL |
 | 개발환경 | 1. Client 디바이스는 Windows를 기반으로 한 PC로 한다.<br>2. FE는  React를 사용한다.<br>3. BE는 FastAPI를 기반으로 구현한다.<br>4. DB는 MySQL를 사용한다.<br>5. FE또는 BE에 사용하는 특별한 라이브러리는 Google Maps JavaScript API를 활용하여 지도 기반 기능을 구현한다.<br>6. API Call을 위해 OpenAI 서비스를 사용한다.
 | 사용하는 소프트웨어 URL | 1. Client 디바이스는 Windows를 기반으로 한 PC로 한다.<br>2. FE는  React를 사용한다.<br>3. BE는 FastAPI를 기반으로 구현한다.<br>4. DB는 MySQL를 사용한다.<br>5. FE또는 BE에 사용하는 특별한 라이브러리는 Google Maps JavaScript API를 활용하여 지도 기반 기능을 구현한다.<br>6. API Call을 위해 OpenAI 서비스를 사용한다.
 | 기대 효과 | 여성 1인 여행자가 안전하고 효율적으로 여행을 계획할 수 있고, 여성의 이동권과 안전권을 기술적으로 보장한다. |
-| GitHub Repo | [https://github.com/capstone-team404](https://github.com/capstone-team404) |
+| GitHub Repo | https://github.com/capstone-team404/Spring404 |
 | Team Ground Rule | (https://github.com/capstone-team404/Spring404/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 26.03.16 |
+| 최종수정일 | 26.04.15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -334,31 +334,25 @@
 
 ---
 
-
-
 <a id="team-14"></a>
 ## Team 14 def
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 | 로컬 환경에서의 Agentic AI 병목 분석 및 성능 최적화: Apple silicon 온디바이스를 중심으로 |
+| 프로젝트명 | 로컬 LLM 기반 Coding Agent에서 Frequently Accessed Code 블록의 KV Cache 재사용을 통한 Token 소비 최적화 |
 | 서비스명(브랜드) | |
 | 트랙 | 연구 |
 | 팀명 | def |
 | 팀구성 | 서혜원, 신은서, 이재린 |
 | 팀지도교수 | 심재형 교수님 |
-| 무엇을 만들고자 하는가 | - 로컬 워크로드를 분석하고 병목을 스스로 해결하는 에이전트 기반 최적화 프레임워크 설계 및 구현<br>- Experimental Evaluation (논문 핵심): 최적화 적용 전/후의 성능(TPS, Latency, Energy Efficiency) 비교 데이터와 다양한 워크로드 시나리오(단일 추론 vs 멀티태스킹)에서의 자원 효율성 검증 보고서 |
-| 고객 (누구를 위해) | - Agent AI 시스템 설계자 및 연구자: 클라우드 의존도를 낮추고 로컬 기기(Edge Device)의 하드웨어 잠재력을 끝까지 끌어올려야 하는 엔지니어<br>- Agent AI 사용자: 외부 클라우드 서버에 데이터를 보내지 않고, Mac mini 같은 로컬 기기에서 개인화된 AI 모델을 안전하게 돌리고 싶은 개인 및 기업 |
-| Pain Point (해결할 문제) | - 리소스 고갈:LLM(거대언어모델) 실행 시 메모리 점유율이 급증하여 시스템이 멈추거나 느려지는 현상<br>- 예측 불가능한 병목(Dynamic Bottleneck):워크로드의 성격(연산 중심 vs 메모리 중심)에 따라 시스템의 어느 부분에서 병목이 생길지 실시간으로 파악하기 어려움<br>- 메모리 고갈(Memory Issue):특히 LLM 구동 시 제한된 통합 메모리(Unified Memory) 용량을 초과할 때 생기는 다양한 문제점 |
-| 사용 기술 | - Agentic Monitoring Loop : 에이전트가 시스템 API를 통해 CPU/GPU 등 점유율 및 전력 소모량을 실시간 관찰하고 대응 전략을 결정<br>- 현재 실행 중인 워크로드에 대한 실시간으로 분류하는 분석 알고리즘 |
-| 개발환경 | 1. Client 디바이스<br><br>- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행<br><br>2. FE <br><br>- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화<br><br>3. 특별한 라이브러리<br><br>- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크<br><br>- LangChain : Agent의 의사결정 루프를 설계<br><br>6. API Call 서비스<br>- 해당 없음<br>- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
-| 사용하는 소프트웨어 URL | 1. Client 디바이스<br><br>- PC (macOS): 연구 대상이 Mac mini이므로 실험과 구동 모두 Mac 환경에서 진행<br><br>2. FE <br><br>- Streamlit : 파이썬 기반으로 대시보드를 빠르게 만들 수 있어, 실시간 자원 사용량 그래프(CPU, GPU, RAM)를 시각화<br><br>3. 특별한 라이브러리<br><br>- MLX : Apple Silicon GPU/NPU를 최대한 활용하기 위한 애플의 공식 딥러닝 프레임워크<br><br>- LangChain : Agent의 의사결정 루프를 설계<br><br>6. API Call 서비스<br>- 해당 없음<br>- Local LLM (Llama 3, Ollama)의 활용. 외부 API(OpenAI 등)를 쓰면 '로컬 워크로드 최적화'라는 연구 취지에 어긋남. 로컬에 모델을 띄우고 호출함.
-| 기대 효과 | - 효율성 극대화:동일 하드웨어 대비 AI 추론 성능(Throughput) 및 응답 속도(Latency)의 유의미한 향상.<br>- 시스템 안정성:메모리 이슈로 인한 시스템 다운 방지 및 멀티태스킹 환경에서의 부드러운 사용자 경험 유지.<br>- 에너지 효율: 불필요한 연산 낭비를 줄여 전력 소모 최적화 및 발열 제어 |
+| 무엇을 만들고자 하는가 | 코딩 에이전트가 레포지토리를 탐색하는 과정에서 반복적으로 읽히는 코드 블록을 추적하고, 해당 블록의 KV Cache를 context 내 위치에 무관하게 메모리에 상주시켜 재사용함으로써 prefill 비용을 줄이는 최적화 레이어를 vLLM 기반 로컬 환경에 구현한다.<br>- 코드 블록별 read frequency 프로파일러<br>- Hot block 판별 및 KV Cache pinning 정책<br>- 로컬 LLM 추론 파이프라인과의 통합<br>|
+| 고객 (누구를 위해) | - 로컬 LLM으로 코딩 에이전트를 운용하는 개인 개발자 / 연구자<br> - API 비용 대신 온디바이스 추론을 선택한 팀 (스타트업, 보안 민감 조직)<br> - NVIDIA GPU 기반 자체 인프라 운용 조직<br>|
+| Pain Point (해결할 문제) | - 코딩 에이전트의 토큰 소비에서 input token이 압도적으로 지배적이며, 토큰 캐싱을 적용해도 그 구조는 유지된다. 핵심 원인은 코드 탐색 패턴에 있다.<br>- SWE-Agent를 포함한 코딩 에이전트는 파일 접근 시 전체 파일 내용을 읽는 whole-file reading 방식을 채택하는데, 매 스텝마다 대화 히스토리가 누적되면서 같은 파일을 반복 읽어도 prefix가 달라져 기존 prefix caching이 무력화된다.<br>->에이전트가 같은 파일을 반복 탐색할 때마다 full prefill이 재발생하고, 로컬 환경에서는 이것이 직접적인 지연 시간 + VRAM 대역폭 낭비로 이어짐 |
+| 사용 기술 | - 에이전트 프레임워크 : SWE-Agent<br> - 추론 런타임 : vLLM<br>- 타겟 하드웨어 : NVDIA RTX 5090X2(VRAM 31.84GBX2, Linux)<br>- 프로파일링 : nvida-smi, nvml, vLLM metrics endpoint<br>- KV Cache 제어 : vLLM block manager 커스터마이징+위치에 종속되지 않는 pinning 정책<br>|
+| 기대 효과 | - Prefill latency 감소 : 자주 읽히는 코드 블록의 KV Cache를 재계산 없이 재사용<br>- VRAM 대역폭 절약 — RTX 5090 듀얼 환경에서 중복 prefill로 인한 메모리 낭비 제거<br>- 총 토큰 소비 감소 : 반복 read에서 발생하는 input token 중복 제거<br> -Long context 환경 대응 : 히스토리가 누적되어도 캐시 hit 유지<br>|
 | GitHub Repo | [https://github.com/capstone-2026-ewha/def](https://github.com/capstone-2026-ewha/def) |
 | Team Ground Rule | [https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md](https://github.com/capstone-2026-ewha/def/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026-3-12 |
-
-[↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
+| 최종수정일 | 2026-4-15 |
 
 ---
 
@@ -367,22 +361,22 @@
 
 | 항목 | 내용 |
 |------|------|
-| 프로젝트명 | 엣지 환경 배포를 위한 Vision Transformer 구조적 가지치기 및 경량화 파이프라인 구축과 성능 분석 |
+| 프로젝트명 | 엣지 디바이스 배포를 위한 Vision Foundation Model의 2:4 구조적 희소성 성능 분석 및 추론 파이프라인 구축 |
 | 서비스명(브랜드) | |
 | 트랙 | 연구 |
 | 팀명 | 햄부기 |
 | 팀구성 | 신성현, 송영채, 장수연 |
-| 팀지도교수 | 심재형 |
-| 무엇을 만들고자 하는가 | 엣지 장치와 클라우드 서버가 협력하여 이미지를 빠르게 분석하는 분산 AI 추론 시스템 |
-| 고객 (누구를 위해) | AI 기반 서비스를 개발하는 학생 팀 및 연구 프로젝트 수행자를 위해 |
-| Pain Point (해결할 문제) | 엣지 장치에서 AI 모델을 실행할 때 발생하는 높은 연산 부담과 네트워크 지연 문제를 해결하기 위해 |
-| 사용 기술 | Computer Vision 모델과 Edge–Cloud Split Inference 기술을 사용하여 일부 연산은 엣지에서, 나머지는 클라우드에서 처리하는 방식 사용 |
-| 개발환경 | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- Hugging Face Transformers (ViT 모델 로드)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음
-| 사용하는 소프트웨어 URL | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- Hugging Face Transformers (ViT 모델 로드)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음
-| 기대 효과 | AI 추론 속도를 개선하고 네트워크 사용량을 줄이며, 제한된 연산 자원을 가진 장치에서도 효율적인 AI 서비스가 가능해진다 |
+| 팀지도교수 | 심재형 교수님 |
+| 무엇을 만들고자 하는가 | NVIDIA Ampere 및 차세대 아키텍처에서 지원하는 2:4 Structured Sparsity 기법을 VFM에 적용하여 엣지 디바이스에서의 추론 성능을 극대화하는 파이프라인 구축 |
+| 고객 (누구를 위해) | Edge AI 기반 서비스를 개발하는 학생 팀 및 연구 프로젝트 수행자를 위해 |
+| Pain Point (해결할 문제) | 최근 Vision Foundation Model(VFM)은 강력한 성능을 보여주지만, 엣지 환경에 배포하기에는 다음과 같은 치명적인 한계가 있다.<br><br>- **VFM의 높은 연산 비용**: ViT 기반 모델은 파라미터 수가 방대하여 엣지 GPU에서도 실시간 추론이 어렵다.<br>- **메모리 대역폭 병목**: 대규모 가중치를 메모리에서 불러오는 과정에서 에너지가 소모되고 지연 시간이 발생한다.<br>- **하드웨어 최적화 미비**: 일반적인 Unstructured Sparsity(무작위 희소화)는 가중치를 줄여도 실제 하드웨어(GPU)에서 연산 가속으로 이어지지 않는 경우가 많다.<br><br>따라서 엣지 디바이스(NVIDIA Jetson AGX Orin 등)의 Sparse Tensor Core를 활용하여, 하드웨어 수준에서 성능을 끌어올릴 수 있는 구조적 최적화가 필요하다. |
+| 사용 기술 | **모델 최적화 및 학습**<br>- 2:4 Structured Sparsity: 연속된 4개의 가중치 중 2개를 0으로 제한하는 구조적 희소화 기법으로, Sparse Tensor Core에서 0이 아닌 값만 선택적으로 연산하여 이론적으로 최대 2배의 처리량 향상을 달성할 수 있다.<br>- VFM Fine-tuning: DINOv2나 CLIP 같은 모델에 Sparse-refined 학습을 적용하여 정확도 손실을 최소화한다.<br><br>**추론 최적화**<br>- TensorRT 가속: 2:4 패턴을 인식하는 TensorRT 엔진을 빌드하여 Orin 디바이스에 최적화된 실행 파일을 생성한다.<br><br>**시스템 파이프라인**<br>- End-to-End 파이프라인: 이미지 입력부터 Sparse 연산을 거친 최종 추론까지의 전 과정을 자동화한다. |
+| 개발환경 | 1. Client 디바이스 — PC (Windows) + Jetson AGX Orin (엣지 디바이스)<br>2. FE — 없음<br>3. BE — 없음<br>4. DB — 없음 (실험 결과는 TensorBoard로 시각화)<br>5. 특별한 라이브러리<br>- PyTorch (모델 학습 및 가지치기)<br>- torch.ao (2:4 Sparsity 적용)<br>- TensorRT (Jetson 추론 최적화)<br>- ONNX (모델 변환)<br>- TensorBoard (실험 결과 시각화)<br>6. API Call 서비스 — 없음 |
+| 사용하는 소프트웨어 URL | - PyTorch(https://pytorch.org/)<br>- TensorRT(https://developer.nvidia.com/tensorrt)<br>- ONNX(https://onnx.ai/)<br>- NVIDIA Developer(https://developer.nvidia.com/) |
+| 기대 효과 | 본 프로젝트를 통해 Vision Foundation Model을 엣지 환경에서도 실시간으로 활용할 수 있는 기반을 마련할 수 있으며, 기존 Dense 모델 대비 연산 속도와 처리량이 크게 개선된다. 특히 2:4 Structured Sparsity와 Sparse Tensor Core를 활용함으로써 단순한 모델 경량화를 넘어 실제 하드웨어 수준에서의 성능 향상을 달성할 수 있다. 또한 pruning 이후 fine-tuning 전략을 통해 정확도 손실을 최소화함으로써, 경량화와 성능 사이의 trade-off 문제를 효과적으로 해결할 수 있다. 결과적으로 본 파이프라인은 다양한 비전 및 멀티모달 모델에 재사용 가능하며, VFM을 실제 산업 현장에 적용 가능한 수준으로 끌어내리는 데 기여할 수 있다. |
 | GitHub Repo | [https://github.com/Ewha-Capstone-Project/Hambugy.git](https://github.com/Ewha-Capstone-Project/Hambugy.git) |
 | Team Ground Rule | [https://github.com/Ewha-Capstone-Project/Hambugy/blob/main/Team_Ground_Rule.md](https://github.com/Ewha-Capstone-Project/Hambugy/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 26/03/14 |
+| 최종수정일 | 26/04/15 |
 
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
@@ -444,24 +438,20 @@
 ## Team 18 디바트(deep-art)
 
 | 항목 | 내용 |
-|------|------|
-| 프로젝트명 | 멀티모달 AI 기반 배리어프리 오디오 도슨트 자동 생성 서비스 |
-| 서비스명(브랜드) | |
+| --- | --- |
+| 프로젝트명 | 철새 이동 데이터 기반 XAI 인터랙티브 미디어아트 설치 작품: AI 의사결정 과정의 대중적 이해 증진 |
 | 트랙 | 연구 |
 | 팀명 | 디바트(deep-art) |
 | 팀구성 | 최현서, 이나겸, 김나경 |
 | 팀지도교수 | 박현석 |
-| 무엇을 만들고자 하는가 | 전시 정보를 입력하면 AI가 도슨트 설명을 생성하고 음성으로 변환해주는 AI 기반 오디오 도슨트 자동 제작 서비스. 시각장애인을 위한 배리어프리 모드를 함께 제공한다. |
-| 고객 (누구를 위해) | 전시 기획자 및 전시 콘텐츠 제작자 |
-| Pain Point (해결할 문제) | 기존 오디오 도슨트는 전문 도슨트의 해설 작성과 녹음 과정을 통해 제작되기 때문에 시간과 비용이 많이 소요되며, 소규모 전시나 개인 전시에서는 도입이 어려운 경우가 많다. 이에 전시 기획자가 작품 이미지와 작품 정보를 입력하면 AI가 도슨트 해설을 자동으로 생성하고 이를 음성으로 변환하여 오디오 도슨트 콘텐츠를 제작할 수 있는 서비스를 구축하고자 한다. 추가적으로 배리어프리 모드를 통해, 시각장애인의 전시 해설 서비스 접근성을 높이고, 작품의 시각적 요소를 보다 자세히 설명하는 해설 기능을 제공하고자 한다. |
-| 사용 기술 | LMM을 통한 이미지 분석, LLM 및 RAG 기반 콘텐츠 생성, 음성 합성(TTS) 기술 |
-| 개발환경 | <대략의 개발환경 구성요소><br><br>1. client 디바이스<br>- 전시 기획자용: PC 웹 (Windows)<br>- 관람객용: 모바일 웹 (Android)<br><br>2. FE: React + TypeScript<br><br>3. BE: FastAPI<br><br>4. DB: PostgreSQL<br><br>5. FE또는 BE에 사용하는 특별한 라이브러리<br>- Axios<br>- Howler.js<br>- Pillow(이미지 전처리)<br><br>6. API Call로 사용할 서비스<br>- OpenAI<br>- Google Cloud TTS
-| 사용하는 소프트웨어 URL | <대략의 개발환경 구성요소><br><br>1. client 디바이스<br>- 전시 기획자용: PC 웹 (Windows)<br>- 관람객용: 모바일 웹 (Android)<br><br>2. FE: React + TypeScript<br><br>3. BE: FastAPI<br><br>4. DB: PostgreSQL<br><br>5. FE또는 BE에 사용하는 특별한 라이브러리<br>- Axios<br>- Howler.js<br>- Pillow(이미지 전처리)<br><br>6. API Call로 사용할 서비스<br>- OpenAI<br>- Google Cloud TTS
-| 기대 효과 | 소규모 전시에서도 활용 가능한 전시 해설 환경을 제공하며, 배리어프리 해설 기능을 통해 시각장애인을 포함한 다양한 관람객의 문화 접근성 확대에 기여할 수 있다. |
-| GitHub Repo | [https://github.com/ewha-deep-art/deep-art](https://github.com/ewha-deep-art/deep-art) |
-| Team Ground Rule | [https://github.com/ewha-deep-art/deep-art/blob/main/Team_Ground_Rule.md](https://github.com/ewha-deep-art/deep-art/blob/main/Team_Ground_Rule.md) |
-| 최종수정일 | 2026.03.14 |
-
+| 무엇을 만들고자 하는가 | 철새 GPS 데이터를 학습한 AI가 이동 경로를 확률적으로 예측하고, 그 의사결정 과정을 실시간으로 시각화하는 인터랙티브 미디어아트 설치 작품이다. 영상예술학과 대학원생(영상 연출·시각 디자인 담당)과의 협업 프로젝트로, 본 팀은 기술 구현 전반을 담당한다.<br><br>**[작품 형태]**<br>벽면 프로젝션 형태의 설치 작품으로, 관객은 전시 공간에 비치된 조작 장치를 통해 작품과 상호작용한다. 화면에는 AI가 시뮬레이션한 철새 군집의 이동 장면이 실시간으로 펼쳐진다.<br>**- 시각화 연출**<br>철새 군집이 이동하는 장면과 함께 두 가지 정보가 표현된다. 첫 번째는 **후보 경로**로, 배경에는 AI가 산출한 복수의 후보 경로가 옅은 빛의 선으로 펼쳐지고, 가장 확률이 높은 최적 경로가 굵은 선으로 강조된다. 철새 군집은 이 굵은 선을 따라 비행한다. 두 번째는 **기여도**로, 풍향·풍속·기류 등 각 환경 변수가 경로 선택에 끼친 영향을 XAI 기법으로 수치화하여 색과 밝기 변화로 표현한다.<br>**- 인터랙티브 요소**<br>관객은 '풍속'을 직접 조작할 수 있으며, 변화된 확률 분포가 군집 이동 경로에 즉시 반영된다.<br><br>**[시스템 구조]**<br>GPS 데이터 및 기후 데이터로 학습한 LSTM이 리더 철새의 경로 예측 → 환경 변수별 SHAP 기여도 산출 → 리더 철새를 중심으로 Boids 군집화 알고리즘을 통해 군집 생성 → 위치 및 시각화 데이터 FastAPI 전송 → Unity VFX를 통해 실시간 렌더링 |
+| 고객 (누구를 위해) | AI에 대한 지식이 부족한 전시 관람객 — 특히 AI의 결과를 맹목적으로 수용하거나, 기술에 심리적 거리감을 가지고 있는 사람들 (연령·성별 무관) |
+| Pain Point (해결할 문제) | AI의 의사결정이 확대되고 있는 현 사회에서, AI의 결과를 무비판적으로 수용하는 태도는 문제가 된다. 많은 이들은 AI의 결과를 ‘정답’으로 받아들이지만, 실제로 AI는 세계를 완벽히 설명하는 존재가 아니라 수많은 가능성 중에서 확률이 가장 높은 선택지를 제시할 뿐이다. 이와 더불어, AI의 내부 작동 원리를 외부에서 알 수 없는 구조, 즉 블랙박스 문제 역시 이해를 가로막는 요인으로 작용한다. 기존의 XAI(Explainable AI, 설명 가능한 AI)는 이러한 과정을 설명하고자 하지만, 주로 전공자를 위한 복잡한 수치나 그래프 형태로 제공되어 일반 대중이 이해하기에는 한계가 있다.<br><br>본 작품은 미디어아트를 통해 이 두 가지 문제를 동시에 다룬다. AI가 확률적으로 경로를 선택하는 과정과, 그 확률에 영향을 미친 요인들을 직관적이고 시각적으로 표현 가능한 형태로 재구성함으로써, 대중이 심리적 부담 없이 AI의 원리를 이해하고 받아들일 수 있도록 진입 장벽을 낮춘다. |
+| 사용 기술 | **LSTM** (Long Short-Term Memory): 시계열 GPS 데이터를 학습하여 다음 이동 경로를 예측.<br>**SHAP** (SHapley Additive exPlanations): 각 환경 변수(풍향·풍속·기류)가 모델 예측에 기여한 정도를 정량화하는 XAI 기법. 변수별 기여도를 시각화 레이어에 연동.<br>**Boids 알고리즘**: 군집 행동 시뮬레이션 기법. AI 예측 결과를 자연스러운 군집 움직임으로 표현.<br>**FastAPI**: AI 모델 서버(Python)와 렌더링 엔진(Unity) 간 실시간 양방향 데이터 통신을 담당하는 API 프레임워크.<br>**Unity VFX Graph**: 수천 개의 파티클을 실시간으로 렌더링. |
+| 기대 효과 | 첫째, 예술적 시각화 도구가 일반 대중의 AI 리터러시 향상에 미치는 효과를 실증한다. 관람객을 대상으로 전시 체험 전후 설문을 통해 AI 이해도 변화를 측정하고, 미디어아트의 AI 교육 도구로서의 유효성을 검증한다.<br>둘째, XAI 시각화의 새로운 접근 방식을 제안한다. 수치 중심의 기존 XAI 출력 방식을 넘어, 색·밝기·군집 움직임 등 비전공자도 직관적으로 읽을 수 있는 시각화 표현 방식을 탐구한다.<br>셋째, 인터랙티브 미디어아트와 XAI의 융합 가능성을 실험적으로 제시한다. 관객이 변수를 직접 조작하고 AI의 반응을 실시간으로 확인하는 구조를 통해, 단순 관람을 넘어 AI 의사결정 과정에 능동적으로 개입하는 경험을 설계한다. |
+| GitHub Repo  | https://github.com/ewha-deep-art/bird-xai |
+| Team Ground Rule | https://github.com/ewha-deep-art/deep-art/blob/main/Team_Ground_Rule.md |
+| 최종수정일 | 2026.04.15 |
 [↑ 목록으로](#2026-spring-전체-프로젝트-리스트)
 
 ---
@@ -484,7 +474,7 @@
 | 개발환경 | Device : PC(Window)<br>FE<br>- Next.js<br>- Typescript<br>- Vite<br>- yarn<br>- Axios<br>- Tailwindcss v4.2<br>- StoryBook<br>- Zustand<br>- Tanstack Query<br>- React Hook form + Zod<br>- shadcn/ui (ui  컴포넌트)<br>- ECharts<br>- Monaco Editor(필요시)<br>- Vercel or Jenkins<br><br>BE<br>- Java 21, Spring Boot 3<br>- Spring AOP<br>- PostgreSQL<br>- AWS RDS<br>- AWS S3<br>- Redis<br>- Flyway<br>- Github Actions<br>- Docker<br>- Kubernetes<br>- AWS ec2, Route53, ALB<br>- AWS CloudWatch<br>- Sentry<br>- Slf4j, Logback<br>- Spring Security<br>- OAuth2.0<br>- JWT<br>- Swagger<br>- k6, p6spy<br><br>AI<br>- Python<br>- FastAPI<br>- Pydantic v2<br>- pandas<br>- sentence-transformers<br>- OpenAI API<br>- Uvicorn<br>- pytest<br>- Render<br>- GitHub Actions
 | 사용하는 소프트웨어 URL | Device : PC(Window)<br>FE<br>- Next.js<br>- Typescript<br>- Vite<br>- yarn<br>- Axios<br>- Tailwindcss v4.2<br>- StoryBook<br>- Zustand<br>- Tanstack Query<br>- React Hook form + Zod<br>- shadcn/ui (ui  컴포넌트)<br>- ECharts<br>- Monaco Editor(필요시)<br>- Vercel or Jenkins<br><br>BE<br>- Java 21, Spring Boot 3<br>- Spring AOP<br>- PostgreSQL<br>- AWS RDS<br>- AWS S3<br>- Redis<br>- Flyway<br>- Github Actions<br>- Docker<br>- Kubernetes<br>- AWS ec2, Route53, ALB<br>- AWS CloudWatch<br>- Sentry<br>- Slf4j, Logback<br>- Spring Security<br>- OAuth2.0<br>- JWT<br>- Swagger<br>- k6, p6spy<br><br>AI<br>- Python<br>- FastAPI<br>- Pydantic v2<br>- pandas<br>- sentence-transformers<br>- OpenAI API<br>- Uvicorn<br>- pytest<br>- Render<br>- GitHub Actions
 | 기대 효과 | 비개발자도 즉시 데이터를 탐색하고 빠르게 의사결정을 내릴 수 있게 됨. |
-| GitHub Repo | [https://github.com/26-ewha-capstone-logue](https://github.com/26-ewha-capstone-logue) |
+| GitHub Repo | [https://github.com/26-ewha-capstone-logue](https://github.com/26-ewha-capstone-logue/logue) |
 | Team Ground Rule | [Team_Ground_Rule](https://github.com/26-ewha-capstone-logue/docs/blob/main/Team_Ground_Rule.md) |
 | 최종수정일 | 2026.03.16 |
 
